@@ -53,7 +53,7 @@ in {
       "btop/themes".source = "${dotfiles}/btop/themes";
       "direnv/direnv.toml".source = "${dotfiles}/direnv/direnv.toml";
       "zed".source = "${dotfiles}/zed";
-      "niri".source = "${dotfiles}/niri/config.kdl";
+      "niri/config.kdl".source = "${dotfiles}/niri/config.kdl";
     };
   };
 }
