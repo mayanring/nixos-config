@@ -14,7 +14,7 @@
 	enabled = true
 
 [core]
-  sshCommand = "ssh -i ~/.ssh/$(hostname).personal.id_ed25519"
+  sshCommand = "ssh -i ~/.ssh/$(hostname).id_ed25519"
   pager = delta
   excludesfile = ~/.gitignore
 
