@@ -76,6 +76,11 @@ in {
     openssh.enable = true;
     dbus.enable = true;
 
+    gnome = {
+      gnome-keyring.enable = true;
+      gcr-ssh-agent.enable = false;
+    }
+
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -145,6 +150,16 @@ in {
       noto-fonts
       noto-fonts-color-emoji
       noto-fonts-cjk-sans
+    ];
+  };
+
+  xdg.portal = {
+    enable = true;
+
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+      gnome-keyring
     ];
   };
 }
