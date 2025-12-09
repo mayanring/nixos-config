@@ -53,6 +53,7 @@ in {
       "direnv/direnv.toml".source = "${dotfiles}/direnv/direnv.toml";
       "zed".source = "${dotfiles}/zed";
       "niri/config.kdl".source = "${dotfiles}/niri/config.kdl";
+      "noctalia".source = "${dotfiles}/noctalia";
     };
   };
 }
