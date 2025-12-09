@@ -67,14 +67,23 @@ in {
     systemPackages = with pkgs; [
       helix
       ghostty
+      inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
   };
+
+  imports = [
+    inputs.noctalia.nixosModules.default
+  ];
 
   services = {
     upower.enable = true;
     openssh.enable = true;
     dbus.enable = true;
     tuned.enable = true;
+
+    noctalia-shell = {
+      enable = true;
+    };
 
     gnome = {
       gnome-keyring.enable = true;
