@@ -40,7 +40,6 @@ in {
 
   programs = {
     niri.enable = true;
-    waybar.enable = true;
     steam.enable = true;
     gamescope.enable = true;
     gamemode.enable = true;
@@ -75,6 +74,7 @@ in {
     upower.enable = true;
     openssh.enable = true;
     dbus.enable = true;
+    tuned.enable = true;
 
     gnome = {
       gnome-keyring.enable = true;
