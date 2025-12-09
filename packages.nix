@@ -43,5 +43,6 @@ pkgs: {
     localsend
     pavucontrol
     ungoogled-chromium
+    xwayland-satellite
   ];
 }

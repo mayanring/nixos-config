@@ -79,7 +79,7 @@ in {
     gnome = {
       gnome-keyring.enable = true;
       gcr-ssh-agent.enable = false;
-    }
+    };
 
     pipewire = {
       enable = true;
