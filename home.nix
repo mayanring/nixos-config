@@ -43,7 +43,6 @@ in {
   xdg = {
     configFile = {
       "host".source = hostDotfiles;
-      "scripts".source = "${dotfiles}/scripts";
       "bat".source = "${dotfiles}/bat";
       "starship.toml".source = "${dotfiles}/starship/starship.toml";
       "tealdeer".source = "${dotfiles}/tealdeer";
