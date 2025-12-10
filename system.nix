@@ -44,7 +44,7 @@ in {
     gamescope.enable = true;
     gamemode.enable = true;
 
-    # ssh.startAgent = true;
+    ssh.startAgent = true;
     dconf.enable = true;
 
     _1password.enable = true;
