@@ -43,6 +43,7 @@ in {
     steam.enable = true;
     gamescope.enable = true;
     gamemode.enable = true;
+    fish.enable = true;
 
     ssh.startAgent = true;
     dconf.enable = true;
@@ -62,7 +63,7 @@ in {
   };
 
   environment = {
-    shells = [pkgs.zsh pkgs.bash];
+    shells = [pkgs.zsh pkgs.bash pkgs.fish];
 
     systemPackages = with pkgs; [
       helix
@@ -136,6 +137,7 @@ in {
       isNormalUser = true;
       extraGroups = ["wheel" "networkmanager"];
       openssh.authorizedKeys.keys = sshPublicKeys;
+      shell = pkgs.fish;
     };
   };
 

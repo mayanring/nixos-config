@@ -53,6 +53,10 @@ in {
       "zed".source = "${dotfiles}/zed";
       "niri/config.kdl".source = "${dotfiles}/niri/config.kdl";
       "noctalia".source = "${dotfiles}/noctalia";
+      "fish" = {
+        source = "${dotfiles}/fish";
+        recursive = true;
+      };
     };
   };
 }
