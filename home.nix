@@ -57,6 +57,7 @@ in {
         source = "${dotfiles}/fish";
         recursive = true;
       };
+      "ghostty".source = "${dotfiles}/ghostty";
     };
   };
 }
