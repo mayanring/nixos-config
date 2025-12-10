@@ -46,7 +46,6 @@ in {
       "bat".source = "${dotfiles}/bat";
       "starship.toml".source = "${dotfiles}/starship/starship.toml";
       "tealdeer".source = "${dotfiles}/tealdeer";
-      "mako".source = "${dotfiles}/mako";
       "lazygit/config.yml".source = "${dotfiles}/lazygit/config.yml";
       "btop/btop.conf".source = "${dotfiles}/btop/btop.conf";
       "btop/themes".source = "${dotfiles}/btop/themes";

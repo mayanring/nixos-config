@@ -21,7 +21,6 @@ pkgs: {
     firefox-bin
     easyeffects
     just
-    mako
     wl-clipboard
     steam-run
     font-manager

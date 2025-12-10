@@ -82,7 +82,7 @@
                     "followFocusedScreen": false,
                     "hideUnoccupied": false,
                     "id": "Workspace",
-                    "labelMode": "index"
+                    "labelMode": "none"
                 },
                 {
                     "colorizeIcons": false,
@@ -99,18 +99,15 @@
                     "id": "MediaMini",
                     "maxWidth": 145,
                     "scrollingMode": "hover",
-                    "showAlbumArt": false,
+                    "showAlbumArt": true,
                     "showArtistFirst": true,
                     "showProgressRing": true,
-                    "showVisualizer": false,
+                    "showVisualizer": true,
                     "useFixedWidth": false,
                     "visualizerType": "linear"
                 }
             ],
             "right": [
-                {
-                    "id": "ScreenRecorder"
-                },
                 {
                     "blacklist": [
                     ],
@@ -121,17 +118,16 @@
                     ]
                 },
                 {
-                    "hideWhenZero": true,
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true
+                    "id": "ScreenRecorder"
                 },
                 {
                     "displayMode": "onhover",
                     "id": "Volume"
                 },
                 {
-                    "displayMode": "onhover",
-                    "id": "Brightness"
+                    "hideWhenZero": true,
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true
                 },
                 {
                     "colorizeDistroLogo": false,
