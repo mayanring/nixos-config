@@ -148,7 +148,7 @@ in {
 
   fonts = {
     fontconfig.defaultFonts = {
-      sansSerif = ["Noto Sans"];
+      sansSerif = ["Inter"];
       serif = ["Noto Serif"];
       monospace = ["JetBrains Mono Nerd Font"];
     };
