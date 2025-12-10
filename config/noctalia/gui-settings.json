@@ -9,7 +9,7 @@
         "position": "center",
         "showCategories": true,
         "sortByMostUsed": true,
-        "terminalCommand": "xterm -e",
+        "terminalCommand": "ghostty",
         "useApp2Unit": false,
         "viewMode": "list"
     },
@@ -53,8 +53,8 @@
                     "hideMode": "alwaysExpanded",
                     "icon": "rocket",
                     "id": "CustomButton",
-                    "leftClickExec": "qs -c noctalia-shell ipc call launcher toggle",
-                    "leftClickUpdateText": false,
+                    "leftClickExec": "noctalia-shell ipc call launcher toggle",
+                    "leftClickUpdateText": true,
                     "maxTextLength": {
                         "horizontal": 10,
                         "vertical": 10

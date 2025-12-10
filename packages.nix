@@ -36,7 +36,6 @@ pkgs: {
     usbutils
     openssl
     _1password-cli
-    fuzzel
     pulseaudio
     tealdeer
     pinta
