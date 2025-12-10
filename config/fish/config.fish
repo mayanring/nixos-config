@@ -30,6 +30,14 @@ function open
     xdg-open $argv >/dev/null 2>&1
 end
 
+function fish_greeting
+    if test $COLUMNS -gt 94
+        command cat ~/.config/fish/greet.txt
+    else
+        command cat ~/.config/fish/greet-short.txt
+    end
+end
+
 if type -q zoxide
     zoxide init fish | source
 end
