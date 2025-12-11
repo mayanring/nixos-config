@@ -2,3 +2,4 @@ theme = TokyoNight Moon
 font-size = 12
 window-padding-x = 12
 window-padding-y = 12
+window-padding-color = extend
