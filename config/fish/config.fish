@@ -42,4 +42,8 @@ if type -q zoxide
     zoxide init fish | source
 end
 
+if status is-interactive
+    atuin init fish | source
+end
+
 starship init fish | source

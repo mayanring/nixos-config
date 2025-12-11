@@ -14,6 +14,7 @@
 in {
   programs = {
     home-manager.enable = true;
+    atuin.enable = true;
 
     direnv = {
       enable = true;
@@ -58,6 +59,7 @@ in {
         recursive = true;
       };
       "ghostty".source = "${dotfiles}/ghostty";
+      "atuin".source = "${dotfiles}/atuin";
     };
   };
 }
