@@ -42,5 +42,6 @@ pkgs: {
     pavucontrol
     ungoogled-chromium
     xwayland-satellite
+    logseq
   ];
 }
