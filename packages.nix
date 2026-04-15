@@ -43,5 +43,6 @@ pkgs: {
     ungoogled-chromium
     xwayland-satellite
     logseq
+    nautilus
   ];
 }
