@@ -82,10 +82,6 @@ in {
     dbus.enable = true;
     tuned.enable = true;
 
-    noctalia-shell = {
-      enable = true;
-    };
-
     gnome = {
       gnome-keyring.enable = true;
       gcr-ssh-agent.enable = false;
