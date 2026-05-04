@@ -27,6 +27,15 @@ in {
     preset = "default";
   };
 
+  services.udiskie = {
+    enable = true;
+    settings = {
+      program_options = {
+        file_manager = "${pkgs.nautilus}/bin/nautlius";
+      };
+    };
+  };
+
   home = {
     inherit stateVersion username;
     homeDirectory = home;
@@ -34,6 +43,7 @@ in {
     packages =
       builtins.concatLists (builtins.attrValues (import ./packages.nix pkgs));
 
+    # Link dotfiles that live outside of ~/.config
     file = {
       ".gitconfig".source = "${dotfiles}/git/gitconfig";
       ".gitignore".source = "${dotfiles}/git/gitignore";
@@ -41,6 +51,7 @@ in {
     };
   };
 
+  # link dotfiles inside ~/.config
   xdg = {
     configFile = {
       "host".source = hostDotfiles;
@@ -60,6 +71,8 @@ in {
       };
       "ghostty".source = "${dotfiles}/ghostty";
       "atuin".source = "${dotfiles}/atuin";
+      "helix".source = "${dotfiles}/helix";
+      "jj".source = "${dotfiles}/jj";
     };
   };
 }

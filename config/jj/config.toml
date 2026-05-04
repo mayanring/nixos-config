@@ -1,0 +1,17 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "Ryan Ming"
+email = "{{ .email }}"
+
+[ui]
+default-command = ["status"]
+pager = ["delta", "--pager", "less -FRX"] # Keeps output from terminal after closing the pager
+diff-formatter = ":git"
+
+[[--scope]]
+--when.commands = ["diff", "show"] # allow `jj diff` and `jj show` to clear the output from the terminal after closing the pager
+
+[[--scope.ui]]
+pager = "delta"
+diff-formatter = ":git"

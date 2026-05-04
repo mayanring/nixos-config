@@ -12,6 +12,8 @@ alias lta='lt -a'
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 alias cat="bat"
 alias rebuild="just -f ~/.nixos-config/justfile apply"
+alias dev="devenv"
+alias be="bundle exec"
 
 # Git
 alias gst='git status'

@@ -37,5 +37,7 @@
   services = {
     blueman.enable = true;
     xserver.videoDrivers = [ "nvidia" ];
+    gvfs.enable = true;
+    udisks2.enable = true;
   };
 }

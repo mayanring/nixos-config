@@ -68,8 +68,9 @@ in {
     systemPackages = with pkgs; [
       helix
       ghostty
-      jujutsu
       obsidian
+      devenv
+      gpu-screen-recorder
       inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
   };

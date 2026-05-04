@@ -417,7 +417,6 @@
         "emacs": false,
         "enableUserTemplates": false,
         "foot": false,
-        "fuzzel": true,
         "ghostty": false,
         "gtk": false,
         "kcolorscheme": false,

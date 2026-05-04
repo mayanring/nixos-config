@@ -44,5 +44,6 @@ pkgs: {
     xwayland-satellite
     logseq
     nautilus
+    jujutsu
   ];
 }
