@@ -2,7 +2,7 @@
 
 [user]
 name = "Ryan Ming"
-email = "{{ .email }}"
+email = "{{ .email }}" 
 
 [ui]
 default-command = ["status"]
@@ -12,6 +12,6 @@ diff-formatter = ":git"
 [[--scope]]
 --when.commands = ["diff", "show"] # allow `jj diff` and `jj show` to clear the output from the terminal after closing the pager
 
-[[--scope.ui]]
+[--scope.ui]
 pager = "delta"
 diff-formatter = ":git"
