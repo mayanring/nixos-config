@@ -1,2 +1,9 @@
 [editor.file-picker]
 hidden = false
+
+[editor]
+trim-final-newlines = true
+trim-trailing-whitespace = true
+
+[editor.soft-wrap]
+enable = true

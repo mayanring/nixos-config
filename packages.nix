@@ -45,5 +45,6 @@ pkgs: {
     logseq
     nautilus
     jujutsu
+    meld
   ];
 }
