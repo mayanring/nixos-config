@@ -2,3 +2,12 @@
 name = "markdown"
 text-width = 80
 soft-wrap = { enable = true, wrap-at-text-width = true, max-wrap = 25 }
+
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
+
+[[language]]
+name = "ruby"
+language-servers = ["ruby-lsp"]
+auto-format = true

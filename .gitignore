@@ -1,2 +1,3 @@
 *.bak
 config/jj/repos/*
+config/helix/.devenv/*
