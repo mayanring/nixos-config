@@ -4,7 +4,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    
+    claude-code.url = "github:sadjow/claude-code-nix";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,7 +26,11 @@
     system = "x86_64-linux";
     username = "ryan";
 
-    overlays = [];
+    overlays = [
+      (_final: _prev: {
+        claude-code = inputs.claude-code.packages.${system}.claude-code;
+      })
+    ];
 
     pkgs = import nixpkgs {
       inherit system;

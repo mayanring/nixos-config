@@ -46,5 +46,6 @@ pkgs: {
     nautilus
     jujutsu
     meld
+    claude-code
   ];
 }
