@@ -8,21 +8,21 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "telemetry": {
     "metrics": false,
@@ -32,6 +32,7 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 14,
   "buffer_font_size": 14,
+  "format_on_save": "on",
   "theme": {
     "mode": "dark",
     "light": "One Dark",
@@ -39,5 +40,27 @@
   },
   "wrap_guides": [120],
   "hard_tabs": false,
-  "tab_size": 2
+  "tab_size": 2,
+  "languages": {
+    "Ruby": {
+      "formatter": "language_server",
+      "language_servers": [
+        "ruby-lsp",
+        "!solargraph",
+        "!rubocop",
+        "!sorbet",
+        "!steep",
+        "!kanayago",
+      ],
+    },
+    "HTML+ERB": {
+      "language_servers": ["herb", "ruby-lsp", "..."],
+    },
+    "JS+ERB": {
+      "language_servers": ["ruby-lsp", "..."],
+    },
+    "YAML+ERB": {
+      "language_servers": ["ruby-lsp", "..."],
+    },
+  },
 }
