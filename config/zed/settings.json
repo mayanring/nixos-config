@@ -28,7 +28,7 @@
     "metrics": false,
     "diagnostics": false,
   },
-  "base_keymap": "SublimeText",
+  "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 14,
   "buffer_font_size": 14,
@@ -43,7 +43,6 @@
   "tab_size": 2,
   "languages": {
     "Ruby": {
-      "formatter": "language_server",
       "language_servers": [
         "ruby-lsp",
         "!solargraph",

@@ -111,8 +111,9 @@ in {
     };
 
     displayManager.gdm.enable = true;
-    displayManager.gdm.wayland = true;
-    
+    desktopManager.gnome.enable = true;
+    tailscale.enable = true;
+
     interception-tools =
       let
         itools = pkgs.interception-tools;

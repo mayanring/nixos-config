@@ -16,13 +16,14 @@
 
   boot = {
     loader = {
-      timeout = 0;
+      timeout = 10;
       efi.canTouchEfiVariables = true;
 
       systemd-boot = {
         enable = true;
       };
     };
+    kernelParams = ["nvidia.NVreg_PreserveVideoMemoryAllocations=1" "nvidia.NVreg_TemporaryFilePath=/var/tmp"];
   };
 
   hardware = {
@@ -31,7 +32,13 @@
       settings.General.experimental = true;
     };
     graphics.enable = true;
-    nvidia.open = true;
+    nvidia = {
+      open = true;
+      modesetting.enable = true;
+      powerManagement.enable = true;
+      powerManagement.finegrained = false;
+      nvidiaSettings = true;
+    };
   };
 
   services = {

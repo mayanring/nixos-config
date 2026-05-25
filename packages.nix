@@ -47,5 +47,7 @@ pkgs: {
     jujutsu
     meld
     claude-code
+    mpv
+    tailscale
   ];
 }

@@ -8,8 +8,6 @@ email = "hello@ryanming.com"
 default-command = ["status"]
 pager = ["delta", "--pager", "less -FRX"] # Keeps output from terminal after closing the pager
 diff-formatter = ":git"
-diff-editor = "meld"
-merge-editor = "meld"
 
 [[--scope]]
 --when.commands = ["diff", "show"] # allow `jj diff` and `jj show` to clear the output from the terminal after closing the pager

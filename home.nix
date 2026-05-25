@@ -73,6 +73,8 @@ in {
       "atuin".source = "${dotfiles}/atuin";
       "helix".source = "${dotfiles}/helix";
       "jj".source = "${dotfiles}/jj";
+      "tailscale".source = "${dotfiles}/tailscale";
+      "mpv".source = "${dotfiles}/mpv";
     };
   };
 }
